@@ -12,7 +12,7 @@ edition = "2021"
 [dependencies]
 cpal = "0.15.3"
 claxon = { version = "0.4.2", optional = true }
-hound = { version = "=3.4.0", optional = true }
+hound = { git = "https://github.com/IRSMsoso/hound", optional = true }
 lewton = { version = "0.10", optional = true }
 minimp3_fixed = { version = "0.5.4", optional = true}
 symphonia = { version = "0.5.4", optional = true, default-features = false }
@@ -69,7 +69,3 @@ required-features = ["symphonia-isomp4", "symphonia-aac"]
 [[example]]
 name = "noise_generator"
 required-features = ["noise"]
-
-
-[patch.crates-io]
-hound = {git = "https://github.com/IRSMsoso/hound"}
